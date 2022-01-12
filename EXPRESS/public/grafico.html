@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Con este script se hace un llamado a la librería llamada chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <title>Grafico</title>
+    <style>
+        /* Este se usó para colocar el fondo de pantalla negro */
+        body {
+            background-color: #15181d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Este div sirve como contenedor del gráfico -->
+    <div id='contenedor' class="chart-container" style="position: relative; height:98vh; width:100%;">
+        <!-- canvas se usa para hacer formas, en este caso gráficos y se le dio un id para que pueda ser manipulado por JS -->
+        <canvas id="chart"></canvas>
+    </div>
+    <!-- Se le indica a nuestra aplicación que el script es un tipo de módulo y que se encuentra en nuestra ruta js y el 
+    archivo se llama grafico -->
+    <script type="module" src="/js/grafico.js"></script>
+</body>
+</html>
